@@ -120,7 +120,7 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://github.com/rushikeshnarule/DQ-the-file-donor/tree/web">
+<a href="https://github.com/rushikeshnarule/DQ-the-file-donor">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
