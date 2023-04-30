@@ -1619,7 +1619,7 @@ async def auto_filter(client, msg, spoll=False):
         
         btn.append([
 
-                InlineKeyboardButton("🤔 How To Download ", url=f""),
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
 
             ])
 
