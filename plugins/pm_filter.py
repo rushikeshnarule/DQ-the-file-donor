@@ -298,6 +298,11 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
+                btn.append([
+
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
+            ])
         else:
             if 0 < offset <= int(MAX_B_TN):
                 off_set = 0
@@ -319,6 +324,11 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
+                btn.append([
+
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
+            ])
     except KeyError:
         await save_group_settings(query.message.chat.id, 'max_btn', False)
         settings = await get_settings(query.message.chat.id)
@@ -343,6 +353,11 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
+                btn.append([
+
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
+            ])
         else:
             if 0 < offset <= int(MAX_B_TN):
                 off_set = 0
@@ -363,6 +378,11 @@ async def next_page(bot, query):
                         InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"),
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
+                    [
+
+                        InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73")]
+
+           
                 )
     btn.insert(0, [
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM !", callback_data=f"send_fall#files#{offset}")
@@ -864,6 +884,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✔ Oɴ' if settings["is_shortlink"] else '✘ Oғғ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
+                ],
+                [
+
+                    InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
                 ]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
@@ -951,6 +976,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✔ Oɴ' if settings["is_shortlink"] else '✘ Oғғ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
+                ],
+                [
+                    
+
+                   InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
                 ]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
@@ -1613,10 +1644,20 @@ async def auto_filter(client, msg, spoll=False):
                 btn.append(
                     [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
+                btn.append([
+
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
+            ])
             else:
                 btn.append(
                     [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
+                btn.append([
+
+                InlineKeyboardButton("🤔 How To Download ", url=f"https://t.me/BootXTech/73"),
+
+            ])
     else:
         btn.append(
             [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
